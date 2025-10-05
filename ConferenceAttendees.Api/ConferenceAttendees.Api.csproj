@@ -5,9 +5,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>327ff732-e844-43e7-a549-fc941ac93179</UserSecretsId>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>   
-    <ContainerRepository>conferenceattendees.api</ContainerRepository>
-
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<Version>1.0.0</Version>
+    <ContainerRepository>conferenceattendees.api.publish</ContainerRepository>
+	 <ContainerImageTags>$(Version);latest</ContainerImageTags>
   </PropertyGroup>
 
   <ItemGroup>
