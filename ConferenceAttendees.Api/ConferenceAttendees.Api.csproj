@@ -5,9 +5,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>327ff732-e844-43e7-a549-fc941ac93179</UserSecretsId>
-	<ContainerRepository>ConferenceAttendees.Api.DotNetPublish</ContainerRepository>
-	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-	<DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>   
+    <ContainerRepository>conferenceattendees.api</ContainerRepository>
+
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,15 +15,13 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.0-Preview.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
-	  <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
-	  <PackageReference Include="Serilog.Sinks.Seq" Version="7.0.0" />
-	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <Folder Include="Data\Database\" />
   </ItemGroup>
 
 </Project>
